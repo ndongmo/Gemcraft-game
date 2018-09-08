@@ -1,0 +1,2 @@
+Le fichier 'fichier_inexistant' est mal formaté !  ->  Fri Mar 04 13:10:20 CET 2016
+Le fichier 'g1_A-2.xml' est mal formaté !  ->  Fri Mar 04 13:10:20 CET 2016

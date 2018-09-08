@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="18" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" source="fullTileset.tsx"/>
+ <layer name="Calque de Tile 1" width="25" height="18">
+  <data encoding="base64" compression="zlib">
+   eJy1lNsNwjAMRQM/zMFIzER5SDw2KC+JxxKwBkidAT4IA3AtFWGqGGyXfhwpauOcxLdNEUIoSnqt97jKCIyFdykiuGK9Tvvz+TfHGmwcju4PxwAMDetyHkrHEqwS9TRPg7VXvAc0L5bjIzgJ+5AcWl41Z3AxOKISTR7/OIcnj5syD2nPUnbVczd9DuLu/BcsedShD7KEI/UPWr5bTg4WSoc3X6lX5OD3Ka+fgblQa8mcHPw+5Y49ONTMyNsrDRMwbdixBTvmeAJbgDkv
+  </data>
+ </layer>
+</map>

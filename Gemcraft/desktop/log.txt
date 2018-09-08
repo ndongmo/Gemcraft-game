@@ -1,0 +1,1 @@
+LevelFactory->loadLevel[376] : Le fichier 'g10_carte-4.xml' est mal formaté ! Cause : -1  ->  [Fri May 20 13:40:34 CEST 2016] 

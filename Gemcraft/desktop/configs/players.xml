@@ -1,0 +1,27 @@
+<players>
+	<player name="fabri" currentLevel="1">
+		<stat index="1" name="fabri" time="215.20483"/>
+		<stat index="2" name="fabri" time="254.17007"/>
+		<stat index="3" name="fabri" time="293.55148"/>
+	</player>
+	<player name="jaspion" currentLevel="2">
+		<stat index="1" name="jaspion" time="45.08288"/>
+		<stat index="2" name="jaspion" time="47.91626"/>
+		<stat index="3" name="jaspion" time="320.52652"/>
+	</player>
+	<player name="fabrice" currentLevel="1">
+		<stat index="1" name="fabrice" time="183.36234"/>
+		<stat index="2" name="fabrice" time="192.17142"/>
+		<stat index="3" name="fabrice" time="363.6285"/>
+	</player>
+	<player name="fabre" currentLevel="4">
+		<stat index="1" name="fabre" time="168.00624"/>
+		<stat index="2" name="fabre" time="279.84113"/>
+		<stat index="3" name="fabre" time="399.45825"/>
+	</player>
+	<player name="ndongmo" currentLevel="3">
+		<stat index="1" name="ndongmo" time="182.28697"/>
+		<stat index="2" name="ndongmo" time="258.81326"/>
+	</player>
+	<player name="fab" currentLevel="1"/>
+</players>

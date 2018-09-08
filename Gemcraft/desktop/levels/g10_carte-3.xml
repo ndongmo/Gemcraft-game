@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<level name="Le desert des tourments" map="g10_carte-3" life="1000" mana="200" nexus_x="12" nexus_y="8">
+	<gems>
+		<gem color="red" quantity="1" />
+		<gem color="orange" quantity="1" />
+		<gem color="yellow" quantity="1" />
+		<gem color="green" quantity="1" />
+		<gem color="cyan" quantity="1" />
+		<gem color="blue" quantity="1" />
+		<gem color="magenta" quantity="1" />
+		<gem color="purple" quantity="1" />
+	</gems>
+	
+	<towers quantity="1" />
+	<traps quantity="1" />
+	
+	<spawns>
+		<spawn name="P1" x="0" y="9" />
+		<spawn name="P2" x="24" y="8" />
+	</spawns>
+	<enemytypes>
+		<type name="fly" immunity="blue,red" speed="0.7" size="0.7" sprite="g0_a.png" life="250" mana="30" />
+		<type name="undead" immunity="yellow" speed="0.65" size="0.65" sprite="g0_a.png" life="900" mana="60" />
+		<type name="strong" immunity="none" speed="0.75" size="0.8" sprite="g0_b.png" life="500" mana="100" />
+		<type name="boss" immunity="cyan,green" speed="0.6" size="0.5" sprite="g0_b.png" life="2000" mana="300" />
+		<type name="fast" immunity="none" speed="0.9" size="0.6" sprite="g0_c.png" life="100" mana="20" />
+		<type name="martian" immunity="none" speed="0.85" size="0.82" sprite="g0_c.png" life="850" mana="150" />
+	</enemytypes>
+	<waves>
+		<wave delay="5">
+			<group spawn="P1" lapse="0.4" timer="0">
+				<ennemy type="strong" quantity="33"/>
+				<ennemy type="fast" quantity="43"/>
+			</group>
+			<group spawn="P2" lapse="0.9" timer="5">
+				<ennemy type="fly" quantity="40"/>
+				<ennemy type="undead" quantity="34"/>
+			</group>
+		</wave>
+		<wave delay="25">
+			<group spawn="P1" lapse="0.8" timer="0">
+				<ennemy type="martian" quantity="45" />
+				<ennemy type="fly" quantity="40"/>
+				<ennemy type="boss" quantity="1" />
+			</group>
+			<group spawn="P2" lapse="0.4" timer="5">
+				<ennemy type="fly" quantity="50"/>
+				<ennemy type="strong" quantity="28"/>
+				<ennemy type="boss" quantity="7"/>
+			</group>
+		</wave>
+		<wave delay="25">
+			<group spawn="P1" lapse="0.5" timer="3">
+				<ennemy type="strong" quantity="30"/>
+				<ennemy type="fast" quantity="15"/>
+				<ennemy type="boss" quantity="1"/>
+			</group>
+			<group spawn="P2" lapse="0.7" timer="5">
+				<ennemy type="fly" quantity="50"/>
+				<ennemy type="undead" quantity="1"/>
+				<ennemy type="boss" quantity="4"/>
+			</group>
+		</wave>
+		<wave delay="30">
+			<group spawn="P1" lapse="0.4" timer="5">
+				<ennemy type="undead" quantity="45" />
+				<ennemy type="fast" quantity="58" />
+			</group>
+			<group spawn="P2" lapse="0.7" timer="2">
+				<ennemy type="fly" quantity="50"/>
+				<ennemy type="strong" quantity="23"/>
+			</group>
+		</wave>
+		<wave delay="40">
+			<group spawn="P1" lapse="0.3" timer="0">
+				<ennemy type="fast" quantity="45" />
+				<ennemy type="undead" quantity="35" />
+				<ennemy type="boss" quantity="10" />
+			</group>
+			<group spawn="P2" lapse="0.7" timer="2">
+				<ennemy type="fly" quantity="50"/>
+				<ennemy type="strong" quantity="43"/>
+			</group>
+		</wave>
+		<wave delay="55">
+			<group spawn="P1" lapse="0.6" timer="0">
+				<ennemy type="strong" quantity="30"/>
+				<ennemy type="fast" quantity="45"/>
+			</group>
+			<group spawn="P2" lapse="0.4" timer="5">
+				<ennemy type="fly" quantity="50"/>
+				<ennemy type="undead" quantity="45"/>
+				<ennemy type="boss" quantity="5"/>
+			</group>
+		</wave>
+		<wave delay="65">
+			<group spawn="P1" lapse="0.3" timer="2">
+				<ennemy type="undead" quantity="30"/>
+				<ennemy type="fast" quantity="20"/>
+				<ennemy type="martian" quantity="40"/>
+			</group>
+			<group spawn="P2" lapse="0.4" timer="7">
+				<ennemy type="fly" quantity="50"/>
+				<ennemy type="strong" quantity="35"/>
+				<ennemy type="boss" quantity="20"/>
+			</group>
+		</wave>
+	</waves>
+</level>
