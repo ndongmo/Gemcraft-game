@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<level name="Le Marécage perdu" map="g10_carte-4" life="3500" mana="750" nexus_x="12" nexus_y="8">
+	<gems>
+		<gem color="red" quantity="5" />
+		<gem color="orange" quantity="2" />
+		<gem color="yellow" quantity="1" />
+		<gem color="green" quantity="1" />
+		<gem color="cyan" quantity="2" />
+		<gem color="blue" quantity="1" />
+		<gem color="magenta" quantity="1" />
+		<gem color="purple" quantity="2" />
+	</gems>
+	
+	<towers quantity="3" />
+	<traps quantity="2" />
+	
+	<spawns>
+		<spawn name="P1" x="0" y="8" />
+		<spawn name="P2" x="24" y="10" />
+		<spawn name="P3" x="12" y="17" />
+		<spawn name="P4" x="14" y="0" />
+	</spawns>
+	<enemytypes>
+		<type name="fly" immunity="blue,red" speed="0.7" size="0.7" sprite="g0_a.png" life="250" mana="30" />
+		<type name="undead" immunity="yellow" speed="0.65" size="0.65" sprite="g0_a.png" life="500" mana="60" />
+		<type name="strong" immunity="none" speed="0.75" size="0.8" sprite="g0_b.png" life="500" mana="100" />
+		<type name="boss" immunity="cyan,green" speed="0.6" size="0.92" sprite="g0_b.png" life="2000" mana="400" />
+		<type name="fast" immunity="none" speed="0.9" size="0.6" sprite="g0_c.png" life="100" mana="20" />
+		<type name="martian" immunity="none" speed="0.80" size="0.82" sprite="g0_c.png" life="450" mana="150" />
+		<type name="vampire" immunity="red,green" speed="0.92" size="0.9" sprite="g0_c.png" life="650" mana="250" />
+	</enemytypes>
+	<waves>
+		<wave delay="10">
+			<group spawn="P1" lapse="2" timer="12">
+				<ennemy type="martian" quantity="23"/>
+				<ennemy type="fast" quantity="43"/>
+			</group>
+			<group spawn="P2" lapse="2.9" timer="5">
+				<ennemy type="fly" quantity="40"/>
+				<ennemy type="vampire" quantity="34"/>
+			</group>
+			<group spawn="P3" lapse="2.6" timer="20">
+				<ennemy type="undead" quantity="27"/>
+				<ennemy type="martian" quantity="34"/>
+				<ennemy type="boss" quantity="3"/>
+			</group>
+			<group spawn="P4" lapse="3.8" timer="10">
+				<ennemy type="strong" quantity="40"/>
+				<ennemy type="vampire" quantity="34"/>
+				<ennemy type="boss" quantity="2"/>
+			</group>
+		</wave>
+		<wave delay="70">
+			<group spawn="P1" lapse="1.6" timer="14">
+				<ennemy type="undead" quantity="33"/>
+				<ennemy type="fast" quantity="23"/>
+				<ennemy type="boss" quantity="10"/>
+			</group>
+			<group spawn="P2" lapse="1.8" timer="8">
+			<ennemy type="boss" quantity="7"/>
+				<ennemy type="fly" quantity="45"/>
+				<ennemy type="vampire" quantity="24"/>
+			</group>
+			<group spawn="P3" lapse="2.6" timer="15">
+				<ennemy type="undead" quantity="27"/>
+				<ennemy type="martian" quantity="34"/>
+				<ennemy type="boss" quantity="3"/>
+			</group>
+			<group spawn="P4" lapse="2.9" timer="0">
+				<ennemy type="strong" quantity="40"/>
+				<ennemy type="vampire" quantity="34"/>
+			</group>
+		</wave>
+		<wave delay="90">
+			<group spawn="P3" lapse="2.5" timer="9">
+				<ennemy type="strong" quantity="30"/>
+				<ennemy type="fast" quantity="15"/>
+				<ennemy type="boss" quantity="1"/>
+			</group>
+			<group spawn="P1" lapse="1.5" timer="9">
+				<ennemy type="martian" quantity="30"/>
+				<ennemy type="vampire" quantity="25"/>
+				<ennemy type="boss" quantity="1"/>
+			</group>
+			<group spawn="P2" lapse="2.7" timer="5">
+				<ennemy type="fly" quantity="30"/>
+				<ennemy type="undead" quantity="10"/>
+				<ennemy type="boss" quantity="4"/>
+			</group>
+			<group spawn="P4" lapse="1.4" timer="14">
+				<ennemy type="strong" quantity="30"/>
+				<ennemy type="fast" quantity="15"/>
+				<ennemy type="boss" quantity="5"/>
+			</group>
+		</wave>
+		<wave delay="100">
+			<group spawn="P1" lapse="1.5" timer="20">
+				<ennemy type="fast" quantity="45" />
+				<ennemy type="undead" quantity="35" />
+				<ennemy type="boss" quantity="10" />
+			</group>
+			<group spawn="P3" lapse="0.5" timer="2">
+				<ennemy type="fly" quantity="50"/>
+				<ennemy type="strong" quantity="43"/>
+			</group>
+			<group spawn="P2" lapse="1.3" timer="2">
+				<ennemy type="fly" quantity="20"/>
+				<ennemy type="fast" quantity="20"/>
+				<ennemy type="boss" quantity="4"/>
+			</group>
+			<group spawn="P4" lapse="2.3" timer="2">
+				<ennemy type="vampire" quantity="20"/>
+				<ennemy type="undead" quantity="30"/>
+				<ennemy type="boss" quantity="4"/>
+			</group>
+			<group spawn="P3" lapse="1.4" timer="15">
+				<ennemy type="undead" quantity="45" />
+				<ennemy type="fast" quantity="58" />
+			</group>
+			<group spawn="P1" lapse="2.4" timer="15">
+				<ennemy type="vampire" quantity="25" />
+				<ennemy type="fast" quantity="38" />
+			</group>
+			<group spawn="P2" lapse="1.7" timer="2">
+				<ennemy type="fly" quantity="50"/>
+				<ennemy type="strong" quantity="23"/>
+				<ennemy type="martian" quantity="34"/>
+			</group>
+			<group spawn="P4" lapse="0.4" timer="15">
+				<ennemy type="undead" quantity="45" />
+				<ennemy type="fast" quantity="58" />
+				<ennemy type="boss" quantity="8" />
+			</group>
+		</wave>
+		<wave delay="110">
+			<group spawn="P1" lapse="1.6" timer="5">
+				<ennemy type="strong" quantity="30"/>
+				<ennemy type="fast" quantity="45"/>
+			</group>
+			<group spawn="P2" lapse="0.6" timer="0">
+				<ennemy type="strong" quantity="30"/>
+				<ennemy type="fast" quantity="45"/>
+			</group>
+			<group spawn="P3" lapse="1.2" timer="10">
+				<ennemy type="strong" quantity="30"/>
+				<ennemy type="fast" quantity="45"/>
+				<ennemy type="fast" quantity="15"/>
+			</group>
+			<group spawn="P2" lapse="1.4" timer="3">
+				<ennemy type="fly" quantity="50"/>
+				<ennemy type="undead" quantity="45"/>
+				<ennemy type="boss" quantity="5"/>
+			</group>
+			<group spawn="P4" lapse="1.3" timer="20">
+				<ennemy type="undead" quantity="30"/>
+				<ennemy type="fast" quantity="20"/>
+				<ennemy type="martian" quantity="40"/>
+			</group>
+			<group spawn="P1" lapse="1.7" timer="10">
+				<ennemy type="strong" quantity="20"/>
+				<ennemy type="boss" quantity="4"/>
+			</group>
+			<group spawn="P2" lapse="1.0" timer="12">
+				<ennemy type="fly" quantity="20"/>
+				<ennemy type="fast" quantity="34"/>
+			</group>
+			<group spawn="P3" lapse="2.5" timer="7">
+				<ennemy type="fly" quantity="50"/>
+				<ennemy type="strong" quantity="35"/>
+				<ennemy type="boss" quantity="20"/>
+			</group>
+		</wave>
+	</waves>
+</level>
